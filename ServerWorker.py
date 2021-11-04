@@ -64,7 +64,7 @@ class ServerWorker:
 				self.replyRtsp(self.OK_200, seq[1], self.totalTime)
 		
 		# Process SETUP request
-		if requestType == self.SETUP:
+		elif requestType == self.SETUP:
 			if self.state == self.INIT:
 				# Update state
 				print("processing SETUP\n")
