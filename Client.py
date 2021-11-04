@@ -269,7 +269,7 @@ class Client:
 			self.rtspSeq += 1
 
 			# Write the RTSP request to be sent.
-			request = 'SKIP' + self.fileName + ' RTSP/1.0\nCSeq: ' + str(self.rtspSeq) + '\nSession: ' + str(self.sessionId) + '\nIndex_frame: ' + str(self.index_frame)
+			request = 'SKIP ' + self.fileName + ' RTSP/1.0\nCSeq: ' + str(self.rtspSeq) + '\nSession: ' + str(self.sessionId) + '\nIndex_frame: ' + str(self.index_frame)
 
 			self.requestSent = self.SKIP
 			self.state = self.READY
